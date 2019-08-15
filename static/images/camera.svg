@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="12px" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="05-lesson--started-close-video" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1414.000000, -382.000000)">
+        <g id="toolbar" transform="translate(1068.000000, 0.000000)">
+            <g id="video_call" transform="translate(338.000000, 367.000000)">
+                <g id="Group-15" transform="translate(8.000000, 15.000000)">
+                    <path d="M2.11762638,0 L12.8823736,0 C14.0470898,0 15,0.899966309 15,1.9999707 L15,9.99991211 C15,11.0999165 14.0470898,12 12.8823736,12 L2.11762638,12 C0.952910156,12 0,11.0999165 0,9.99991211 L0,1.9999707 C0,0.899966309 0.952910156,0 2.11762638,0 Z" id="Fill-1" fill="#4A90E2"></path>
+                    <polygon id="Fill-2" fill="#246EC4" points="20 11 15 8.27269095 15 3.72722915 20 1"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

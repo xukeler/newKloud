@@ -1,0 +1,171 @@
+<template>
+  <div id="template" class="template-class">
+
+  </div>
+</template>
+
+<style lang="scss">
+#template {
+
+}
+</style>
+
+<script>
+  import auth from '../../authenticator';
+
+  export default {
+    data() {
+      return {
+        initialized: false,
+        loading: false,
+      };
+    },
+    methods: {
+      _getData(url, before, success, error) {
+        if (before && typeof before === 'function') {
+          before();
+        }
+
+        this.loading = true;
+        this.$Loading.start();
+
+        let self = this;
+        $.ajax({
+          type: 'GET',
+          url: url,
+          beforeSend: function (request) {
+            request.setRequestHeader("UserToken", auth.getUserToken());
+          },
+          success: function (result) {
+            if (result.RetCode === 0) {
+              self.loading = false;
+              self.$Loading.finish();
+
+              if (success && typeof success === 'function') {
+                success(result.RetData);
+              }
+            }
+            else { // error
+              self.loading = false;
+              self.$Loading.error();
+              self.$Message.error({content: result.ErrorMessage,duration: 0,closable: true});
+              console.log(result);
+
+              if (error && typeof error === 'function') {
+                error(result);
+              }
+            }
+          },
+          error: function (xhr, ajaxOptions, thrownError) {
+            self.loading = false;
+            self.$Loading.error();
+            self.$Message.error({content: xhr.status + ': ' + xhr.statusText,duration: 0,closable: true});
+            console.log(xhr);
+
+            if (error && typeof error === 'function') {
+              error();
+            }
+          }
+        });
+      },
+      _postData(url, data, before, success, error) {
+        if (before && typeof before === 'function') {
+          before();
+        }
+
+        this.loading = true;
+        this.$Loading.start();
+
+        let self = this;
+        $.ajax({
+          type: 'POST',
+          url: url,
+          contentType: 'application/json; charset=utf-8',
+          dataType: 'text',
+          data: JSON.stringify(data),
+          beforeSend: function (request) {
+            request.setRequestHeader("UserToken", auth.getUserToken());
+          },
+          success: function (resultString) {
+            let result = JSON.parse(resultString);
+            if (result.RetCode === 0) {
+              self.loading = false;
+              self.$Loading.finish();
+
+              if (success && typeof success === 'function') {
+                success(result.RetData);
+              }
+            }
+            else { // error
+              self.loading = false;
+              self.$Loading.error();
+              self.$Message.error({content: result.ErrorMessage,duration: 0,closable: true});
+              console.log(result);
+
+              if (error && typeof error === 'function') {
+                error(result);
+              }
+            }
+          },
+          error: function (xhr, ajaxOptions, thrownError) {
+            self.loading = false;
+            self.$Loading.error();
+            self.$Message.error({content: xhr.status + ': ' + xhr.statusText,duration: 0,closable: true});
+            console.log(xhr);
+
+            if (error && typeof error === 'function') {
+              error();
+            }
+          }
+        });
+      },
+      _deleteData(url, before, success, error) {
+        if (before && typeof before === 'function') {
+          before();
+        }
+
+        this.loading = true;
+        this.$Loading.start();
+
+        let self = this;
+        $.ajax({
+          type: 'DELETE',
+          url: url,
+          beforeSend: function (request) {
+            request.setRequestHeader("UserToken", auth.getUserToken());
+          },
+          success: function (result) {
+            if (result.RetCode === 0) {
+              self.loading = false;
+              self.$Loading.finish();
+
+              if (success && typeof success === 'function') {
+                success(result.RetData);
+              }
+            }
+            else { // error
+              self.loading = false;
+              self.$Loading.error();
+              self.$Message.error({content: result.ErrorMessage,duration: 0,closable: true});
+              console.log(result);
+
+              if (error && typeof error === 'function') {
+                error(result);
+              }
+            }
+          },
+          error: function (xhr, ajaxOptions, thrownError) {
+            self.loading = false;
+            self.$Loading.error();
+            self.$Message.error({content: xhr.status + ': ' + xhr.statusText,duration: 0,closable: true});
+            console.log(xhr);
+
+            if (error && typeof error === 'function') {
+              error();
+            }
+          }
+        });
+      }
+    }
+  }
+</script>

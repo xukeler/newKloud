@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="27px" viewBox="0 0 32 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>file-s-0</title>
+    <desc>Created with Sketch.</desc>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="documents-copy" transform="translate(-611.000000, -337.000000)">
+            <g id="popup">
+                <g id="upload" transform="translate(378.000000, 230.000000)">
+                    <g id="分组-24" transform="translate(182.000000, 79.000000)">
+                        <g id="file-s-0" transform="translate(51.000000, 26.000000)">
+                            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="32" height="32"></rect>
+                            <polygon id="路径" fill="#DEB538" points="3 6 5.58252428 2 19.4174757 2 22 6"></polygon>
+                            <path d="M3.76470588,6 L28.2352941,6 C30.3058824,6 32,7.72500001 32,9.83333333 L32,25.1666667 C32,27.275 30.3058823,29 28.2352941,29 L3.76470588,29 C1.69411763,29 0,27.275 0,25.1666667 L0,9.83333333 C0,7.72499998 1.69411766,6 3.76470588,6 Z" id="路径" fill="#FFD658"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

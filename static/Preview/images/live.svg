@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>直播</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-33-Copy" transform="translate(-263.000000, -289.000000)">
+            <g id="Group-33">
+                <g id="01" transform="translate(1.000000, 21.000000)">
+                    <g id="直播" transform="translate(262.000000, 268.000000)">
+                        <g>
+                            <circle id="Oval-5" fill="#FF7E00" cx="13" cy="13" r="13"></circle>
+                            <g id="直播-(1)" transform="translate(7.000000, 7.000000)" fill="#FFFFFF">
+                                <polygon id="Fill-1" points="0.00194557035 9.96639731 1.76787493 9.96639731 1.76787493 5.3320202 0.00194557035 5.3320202"></polygon>
+                                <polygon id="Fill-4" points="3.35370932 9.96639731 5.12158425 9.96639731 5.12158425 3.63131313 3.35370932 3.63131313"></polygon>
+                                <polygon id="Fill-5" points="6.73348929 9.96639731 8.50136422 9.96639731 8.50136422 0.014006734 6.73348929 0.014006734"></polygon>
+                                <polygon id="Fill-6" points="10.0871986 9.96639731 11.8550735 9.96639731 11.8550735 3.63131313 10.0871986 3.63131313"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

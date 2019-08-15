@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="webkit" name="renderer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta content="email=no" name="format-detection" />
+  <title>Help Tips of Screen Sharing</title>
+  <style>
+    body{ background: #D3D3D3; margin: 0; padding: 0;}
+    .screen-header{ height: 52px; background: linear-gradient(to right,#0780AB 0,#46BCB5 70%,#4DE0CE 100%)}
+    .screen-header>a{ float: left; margin: 14px 0 0 22px;}
+
+    .screen-content{ background: #fff; font-size: 14px; line-height: 1.5; margin: 70px auto; width: 86%; padding: 35px 42px;}
+    .screen-content ul,.screen-content li{ margin: 0; padding: 0; list-style: none;}
+    .screen-content li{ position: relative; padding-bottom: 50px; overflow: hidden;}
+
+
+    .screen-content li>span:first-child{ float: left; background: #108EE9; width: 28px; height: 28px; text-align: center; line-height: 28px;
+      color: #fff; border-radius: 100%; margin-left: 12px; position: relative; z-index: 2;}
+    .screen-content li>div{ float: left; margin-left: 34px; text-align: left; padding-top: 3px; width: calc(100% - 136px)}
+    .screen-content li>div p{ margin: 0; padding: 0;}
+    .screen-content li>div a{ display: inline-block; background:#108EE9;
+      color: #fff; border-radius: 3px; line-height: 36px; padding:0 10px; text-decoration: none; margin-top: 10px;}
+    .screen-content li>div a span{  background:url("images/icon-screen-file.svg") no-repeat left center; padding-left: 20px;  line-height: 36px; }
+    .screen-content li>div video{  margin-top: 10px; }
+
+
+    .screen-content li.tip-title{ font-size: 24px; padding-bottom: 66px;}
+    .screen-content li.tip-title span{ float: none; display: inline-block; position: relative; z-index: 2; vertical-align: middle;}
+    .screen-content li.tip-title span:first-child{ width: 52px; height: 52px; background: none; margin: 0 10px 0 0;}
+    .screen-content li:before{ content: ''; width: 1px; background: #ccc; height: 100%; position: absolute; left:25px; top: 0; }
+    .screen-content li:last-child:before{ display: none; }
+    .screen-content  .gray-text{ color: #999; padding-top: 10px;}
+
+    .tip-blue{display: inline-block;  color: #108EE9;  background-color: rgba(0,110,255,0.1);
+      border: 1px solid rgba(0,110,255,0.5);   padding: 2px 3px;  border-radius: 3px;  margin: 0 2px;}
+
+
+  </style>
+
+</head>
+
+<body>
+  <header class="screen-header">
+    <a href="/"><img src="images/logo.png" width="135px" alt=""></a>
+  </header>
+  <section class="screen-content">
+    <ul>
+      <li class="tip-title">
+        <span><img src="images/icon-screen.svg" alt=""></span>
+        <span>Help Tips of Screen Sharing</span>
+      </li>
+      <li>
+        <span>1</span>
+        <div>
+          <p>Mouse right click the button and “save as target” to download the extension.</p>
+          <a href="/static/PeerTime-Screensharing-Tool_v1.0.0.3.crx">
+            <span>PeerTime-Screensharing-Tool_v1.0.0.3.crx</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <span>2</span>
+        <div>
+          <p>After download the extension, open the download folder.</p>
+        </div>
+      </li>
+      <li>
+        <span>3</span>
+        <div>
+          <p>Open Chrome extension page ( <span class="tip-blue">More tools - Extensions</span> )</p>
+          <p class="gray-text">Copy the link (<span class="tip-blue">chrome://extensions/</span>) to Chrome address and press Enter will directly open the Chrome extension page</p>
+        </div>
+      </li>
+      <li>
+        <span>4</span>
+        <div>
+          <p>Drag <span class="tip-blue">.crx</span> file into this page as the video show.</p>
+          <video preload="" loop="loop" muted="" autoplay=""><source src="images/screen.mp4" type="video/mp4"></video>
+        </div>
+      </li>
+      <li>
+        <span>5</span>
+        <div>
+          <p>Done! Please enjoy your Peertime now.</p>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+</body>
+
+</html>

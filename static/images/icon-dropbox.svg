@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="41px" viewBox="0 0 46 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>dropbox</title>
+    <desc>Created with Sketch.</desc>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="documents-copy" transform="translate(-751.000000, -347.000000)">
+            <g id="popup">
+                <g id="upload" transform="translate(378.000000, 230.000000)">
+                    <g id="分组-21" transform="translate(331.333333, 79.000000)">
+                        <g id="dropbox" transform="translate(40.000000, 35.000000)">
+                            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="48" height="48"></rect>
+                            <path d="M11.1411456,18.6200377 L24.5,26.7077659 L15.2513293,34.2653216 L2,25.8063243 L11.1411456,18.6200377 Z M37.8058491,33.3386337 L37.8058491,36.2033469 L24.5545198,43.9732686 L24.5545198,44 L24.5272599,43.9732686 L24.5,44 L24.5,43.9732686 L11.2759305,36.2033469 L11.2759305,33.3386337 L15.2513293,35.8840553 L24.5,28.3532309 L24.5,28.2997682 L24.5272599,28.3264996 L24.5545198,28.2997682 L24.5545198,28.3532309 L33.8304503,35.8840553 L37.8058491,33.3386337 Z M15.2513293,3 L24.5,10.5575558 L11.1411456,18.6200377 L2,11.4604825 L15.2513293,3 Z M37.8588544,18.6200377 L47,25.8063243 L33.7759305,34.2653216 L24.5,26.7077659 L37.8588544,18.6200377 Z M33.7759305,3 L47,11.4589974 L37.8588544,18.6185526 L24.5,10.5560707 L33.7759305,3 Z" id="形状" fill="#329AFF" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

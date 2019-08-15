@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta content="email=no" name="format-detection" />
+  <link rel="bookmark" type="image/x-icon"  href="/favicon.ico"/>
+  <link id="basetoolbaricon" rel="icon" href="/static/images/kloudsync.png">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1345880_33a1pmgu8bt.css">
+  <title>KloudSync</title>
+  <script type="text/javascript">
+    window.name = "KloudSync";
+    var url = window.location.href.toLowerCase();
+    if (url.indexOf("https") < 0 && navigator.userAgent.indexOf("Electron")==-1)
+    {
+      url = url.replace("http:", "https:");
+      window.location.replace(url);
+    }
+  </script>
+  <!-- <link rel="stylesheet" href="/static/kendoui/styles/kendo.common-bootstrap.min.css?v=201810011501" />
+  <link rel="stylesheet" href="/static/kendoui/styles/kendo.bootstrap.min.css?v=201810011501" /> -->
+  <!-- <link rel="stylesheet" href="/static/country-flags/css/flag-icon.min.css?v=201810011501" /> -->
+  <link rel="stylesheet" href="/static/iconfont.css?v=201906201020" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@1.9.1/jquery.min.js"></script>
+  <!-- <script src="/static/kendoui/js/kendo.all.min.js?v=201810011501"></script>
+  <script src="/static/kendoui/js/kendo.timezones.min.js?v=201810011501"></script>
+  <script src="/static/kendoui/kendo.scheduler.view.js?v=201810011501"></script>
+  <script src="/static/kendoui/kendo.scheduler.dayview.js?v=201810011501"></script>
+  <script src="/static/kendoui/kendo.scheduler.js?v=201810011501" reload="scheduler"></script>
+  <script src="/static/kendoui/js/cultures/kendo.culture.zh-CN.min.js?v=201810011501"></script> -->
+  <!-- <script src="/static/us_states.js?v=201810011501"></script> -->
+  <!-- <script src="/static/country-phone-code.js?v=201810011501"></script> -->
+  <script src="/static/global.js?v=201907030924"></script>
+  <script src="/static/common.js?v=201907171651"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/agora-rtc-sdk@2.5.0/AgoraRTCSDK.min.js"></script> -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@1.9.426/build/pdf.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@1.9.426/build/pdf.worker.min.js" type="text/javascript"></script>-->
+  <!-- <script src="https://cdn.ronghub.com/RongIMLib-2.4.0.min.js"></script>
+  <script src="https://cdn.ronghub.com/RongEmoji-2.2.7.min.js"></script> -->
+  <!-- <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script> -->
+  <!--<script src="/static/WebRTCAPI.min.js"></script>-->
+  <!--<script src="/static/playppt.js?v=201805221129"></script>-->
+
+  <!-- Dropbox (https://www.dropbox.com/developers/chooser) -->
+  <!-- <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="i1kq6lxm4hf0v9c" async></script>  -->
+  <!-- Google (https://developers.google.com/picker/docs/) -->
+  <!-- <script type="text/javascript"> 
+    // these code is for google drive, please don't insert other code.
+    
+    var googleAuthApiLoaded = false;
+    var googlePickerApiLoaded = false;
+    var googleClientApiLoaded = false;
+    var googleAuthToken;
+
+    function onGoogleLoad() {
+      gapi.load('auth2', onGoogleAuthApiLoad);
+      gapi.load('picker', onGooglePickerApiLoad);
+      gapi.load('client', onGoogleClientApiLoad);
+    }
+
+    function onGoogleAuthApiLoad() {
+      googleAuthApiLoaded = true;
+    }
+
+    function onGooglePickerApiLoad() {
+      googlePickerApiLoaded = true;
+    }
+
+    function onGoogleClientApiLoad() {
+      gapi.client.init({
+        'apiKey': GOOGLEDEVELOPERKEY,
+        'clientId': GOOGLECLIENTID,
+        'scope': GOOGLEACCESSSCOPE,
+      }).then(function() {
+        console.log("client initialized");
+      }).then(function(response) {
+        console.log(response.result);
+      }, function(reason) {
+        console.log('Error: ' + reason.result.error.message);
+      });
+
+      gapi.client.load('drive', 'v2', () => {
+        googleClientApiLoaded = true;
+      });
+    }
+  </script>
+  <script type="text/javascript" src="https://apis.google.com/js/api.js?onload=onGoogleLoad" async></script> -->
+  <script type="text/javascript"> 
+    // these code is for google drive, please don't insert other code.    
+    var googleAuthApiLoaded = false;
+    var googlePickerApiLoaded = false;
+    var googleClientApiLoaded = false;
+    var googleAuthToken;
+  </script>
+
+  <script type="text/javascript">
+    if(IsKlassroom()){
+      document.title = "KlassRoom";
+      gid("basetoolbaricon").href = "/static/images/peertimeiocn.png";
+    }else if(!IsKloudSync() && !IsProjectOne()){
+      document.title="PeerTime";
+      gid("basetoolbaricon").href="/static/images/peertimeiocn.png";
+    }
+  </script>
+  <script>
+  var _hmt = _hmt || [];
+  function LoadBaiduTongji() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?924fc6e4ece7baef29ae468baaa2925e";
+    hm.id="baidutongji";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  }
+  LoadBaiduTongji();
+  </script>      
+</head>
+  <body id="body">
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

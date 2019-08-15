@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="38px" viewBox="0 0 44 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>google-drive</title>
+    <desc>Created with Sketch.</desc>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="documents-copy" transform="translate(-903.000000, -351.000000)">
+            <g id="popup">
+                <g id="upload" transform="translate(378.000000, 230.000000)">
+                    <g id="分组-23" transform="translate(481.000000, 79.000000)">
+                        <g id="google-drive" transform="translate(44.000000, 39.000000)">
+                            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="44" height="44"></rect>
+                            <polygon id="形状" fill="#3B7FF7" fill-rule="nonzero" points="19.7370347 28.3330409 12.4038481 41 36.6668133 41 44 28.3330409"></polygon>
+                            <polygon id="路径-2" fill="#0FA661" fill-rule="nonzero" points="12.5833717 6.59907643 0 28.3330409 7.33406668 41 19.9165583 19.2651582"></polygon>
+                            <polygon id="路径" fill="#FED14D" fill-rule="nonzero" points="41.9213984 24.741861 29.3345067 3 14.6672533 3 27.2550251 24.741861"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

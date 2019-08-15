@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/20px/important_message [#1448]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26.4,12.0168 L26.4,28.8168 C26.4,30.1416 25.3248,31.2168 24,31.2168 C22.6752,31.2168 21.6,30.1416 21.6,28.8168 L21.6,12.0168 C21.6,10.692 22.6752,9.6168 24,9.6168 C25.3248,9.6168 26.4,10.692 26.4,12.0168 L26.4,12.0168 Z M26.4,36.0168 C26.4,37.3416 25.3248,38.4168 24,38.4168 C22.6752,38.4168 21.6,37.3416 21.6,36.0168 C21.6,34.692 22.6752,33.6168 24,33.6168 C25.3248,33.6168 26.4,34.692 26.4,36.0168 L26.4,36.0168 Z M43.2,40.8 C43.2,42.1248 42.1248,43.2 40.8,43.2 L7.2,43.2 C5.8752,43.2 4.8,42.1248 4.8,40.8 L4.8,7.2 C4.8,5.8752 5.8752,4.8 7.2,4.8 L40.8,4.8 C42.1248,4.8 43.2,5.8752 43.2,7.2 L43.2,40.8 Z M43.2,0 L4.8,0 C2.148,0 0,2.1576 0,4.8072 L0,4.8168 L0,43.2168 C0,45.8688 2.148,48 4.8,48 L43.2,48 C45.852,48 48,45.8592 48,43.2072 L48,4.8168 C48,2.1648 45.6,0 43.2,0 L43.2,0 Z" id="path-1"></path>
+    </defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="meeting-on-webcam-list" transform="translate(-696.000000, -225.000000)">
+            <g id="popup">
+                <g id="error" transform="translate(450.000000, 131.000000)">
+                    <g id="Base">
+                        <g id="Icon/20px/important_message-[#1448]" transform="translate(246.000000, 94.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use fill-opacity="0" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <g id="⚙️Atoms/Colour/Red/1---100%" mask="url(#mask-2)" fill="#E6492D" fill-rule="evenodd">
+                                <rect id="Rectangle" x="0" y="0" width="48" height="48"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

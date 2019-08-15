@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="32px" viewBox="0 0 38 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>chat</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2-chat-default" transform="translate(-769.000000, -374.000000)">
+            <g id="left" transform="translate(755.000000, 317.000000)">
+                <g id="mode" transform="translate(14.000000, 50.000000)">
+                    <g id="chat" transform="translate(8.000000, 11.000000)">
+                        <path d="M21.1428571,0.571428562 L2.85714287,0.571428562 C1.59999999,0.571428562 0.571428563,1.59999999 0.571428563,2.85714287 L0.571428563,23.4285714 L5.14285714,18.8571429 L21.1428571,18.8571429 C22.4,18.8571429 23.4285714,17.8285714 23.4285714,16.5714286 L23.4285714,2.85714287 C23.4285714,1.59999999 22.4,0.571428562 21.1428571,0.571428562 Z" id="Shape" stroke="#4A4A4A" fill-rule="nonzero"></path>
+                        <polygon id="Path" fill="#4A4A4A" points="19.7142857 7.28571429 6 7.28571429 6 6 19.7142857 6"></polygon>
+                        <polygon id="Path-Copy" fill="#4A4A4A" points="19.7142857 10.2857143 6 10.2857143 6 9 19.7142857 9"></polygon>
+                        <polygon id="Path-Copy-2" fill="#4A4A4A" points="15 13.2857143 6 13.2857143 6 12 15 12"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Picker Example</title>
+
+    <script type="text/javascript">
+    // The Browser API key obtained from the Google API Console. (P1 [www.techexcel.com])
+    var googleDeveloperKey = 'AIzaSyAmdRGv2v3rr1BoU5zbnfCxGsj70ovmIG8';
+
+    // The Client ID obtained from the Google API Console. Replace with your own Client ID. (P1 [www.techexcel.com])
+    var googleClientId = '669961116815-ip77i4k0i8q2j1cjk9qu349sb8n02vb2.apps.googleusercontent.com';
+
+    // Replace with your own project number from console.developers.google.com.
+    // See "Project number" under "IAM & Admin" > "Settings"
+    var googleAppId = "669961116815";
+
+    var googleAuthApiLoaded = false;
+    var googlePickerApiLoaded = false;
+    var googleClientApiLoaded = false;
+
+    // Scope to use to access user's Drive items.
+    var googleAccessScope = ['https://www.googleapis.com/auth/drive'];
+    var googleAuthToken;
+
+    function onGoogleLoad() {
+      gapi.load('auth2', onGoogleAuthApiLoad);
+      gapi.load('picker', onGooglePickerApiLoad);
+      gapi.load('client', onGoogleClientApiLoad);
+    }
+
+    function onGoogleAuthApiLoad() {
+      googleAuthApiLoaded = true;
+      enableButton();
+    }
+
+    function onGooglePickerApiLoad() {
+      googlePickerApiLoaded = true;
+    }
+
+    function enableButton() {
+      var authBtn = document.getElementById('auth');
+      authBtn.disabled = false;
+      authBtn.addEventListener('click', function() {
+        if (googleAuthToken) {
+          createPicker();
+        }
+        else {
+          gapi.auth2.authorize({
+            client_id: googleClientId,
+            scope: googleAccessScope
+          }, handleAuthResult);
+        }
+      });
+    }
+
+    function handleAuthResult(authResult) {
+      if (authResult && !authResult.error) {
+        googleAuthToken = authResult.access_token;
+        createPicker();
+      }
+    }
+
+    function onGoogleClientApiLoad() {
+      gapi.client.init({
+        'apiKey': googleDeveloperKey,
+        'clientId': googleClientId,
+        'scope': googleAccessScope,
+      }).then(function() {
+        console.log("client initialized");
+      }).then(function(response) {
+        console.log(response.result);
+      }, function(reason) {
+        console.log('Error: ' + reason.result.error.message);
+      });
+
+      gapi.client.load('drive', 'v2', () => {
+        googleClientApiLoaded = true;
+        console.log("client loaded");
+      });
+    }
+
+      // Create and render a Picker object for picking user Photos.
+      function createPicker() {
+        if (googleAuthApiLoaded && googlePickerApiLoaded && googleAuthToken) {
+          var picker = new google.picker.PickerBuilder().
+              addView(google.picker.ViewId.DOCS).
+              setOAuthToken(googleAuthToken).
+              setDeveloperKey(googleDeveloperKey).
+              setCallback(pickerCallback).
+              build();
+          picker.setVisible(true);
+        }
+      }
+
+      // A simple callback implementation.
+      function pickerCallback(data) {
+        var url = 'nothing';
+        if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
+          var doc = data[google.picker.Response.DOCUMENTS][0];
+          var request = gapi.client.drive.files.get({
+            'fileId': doc.id
+          });
+
+          request.execute(function(resp) {
+            console.log(resp);
+
+            var message = 'You picked: ' + resp.downloadUrl;
+            document.getElementById('result').innerHTML = message;
+          });
+        }
+        var message = 'You picked: ' + url;
+        document.getElementById('result').innerHTML = message;
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" id="auth" disabled>Authenticate</button>
+
+    <div id="result"></div>
+
+    <!-- The Google API Loader script. -->
+    <script type="text/javascript" src="https://apis.google.com/js/api.js?onload=onGoogleLoad"></script>
+  </body>
+</html>
