@@ -16,7 +16,7 @@
     "bootstrap-vue": "^0.18.0",
     "iview": "^2.14.3",
     "js-base64": "^2.4.3",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.13.1",
     "pako": "^1.0.6",
     "pdfjs-dist": "^1.10.97",
     "sass-loader": "^6.0.6",
