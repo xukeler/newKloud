@@ -12,7 +12,7 @@
   "dependencies": {
     "ali-oss": "^6.0.2",
     "aws-sdk": "^2.454.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bootstrap-vue": "^0.18.0",
     "iview": "^2.14.3",
     "js-base64": "^2.4.3",
